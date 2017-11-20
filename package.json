@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
-  "version": "0.2.5",
-  "description": "simple boilerplate for small project with using jquery",
+  "name": "b2b-styles",
+  "version": "0.1.0",
+  "description": "prepared styles for b2b applications",
   "main": "app.js",
   "scripts": {
     "start": "rimraf dev && gulp",
@@ -9,7 +9,7 @@
     "serve:prod": "cd ./dist && python -m SimpleHTTPServer 8099"
   },
   "keywords": [
-    "template, boilerplate, jquery"
+    "styless, sass, b2b"
   ],
   "author": "Denis Michailov",
   "license": "MIT",
@@ -36,6 +36,6 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "4.0.0-beta.2"
   }
 }
