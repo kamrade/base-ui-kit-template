@@ -5,9 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import "../../../node_modules/bootstrap/scss/functions";
+@import "./functions";
 @import "./variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
+@import "./mixins";
 @import "../../../node_modules/bootstrap/scss/root";
 @import "../../../node_modules/bootstrap/scss/print";
 @import "../../../node_modules/bootstrap/scss/reboot";
@@ -25,7 +25,7 @@
 @import "../../../node_modules/bootstrap/scss/custom-forms";
 // @import "../../../node_modules/bootstrap/scss/nav";
 // @import "../../../node_modules/bootstrap/scss/navbar";
-@import "../../../node_modules/bootstrap/scss/card";
+// @import "../../../node_modules/bootstrap/scss/card";
 // @import "../../../node_modules/bootstrap/scss/breadcrumb";
 // @import "../../../node_modules/bootstrap/scss/pagination";
 @import "../../../node_modules/bootstrap/scss/badge";

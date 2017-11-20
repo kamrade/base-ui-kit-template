@@ -1,0 +1,129 @@
+$error: red
+
+.input-control
+  position: relative
+  z-index: 0
+  cursor: pointer
+  @media (max-width: map-get($grid-breakpoints, md))
+    margin-bottom: 0.5rem
+
+  .control-label
+    cursor: pointer
+
+  // копочка очистить и стрелочка вниз
+  .form-control--clear, .form-control--select
+    transition: color .3s ease-in-out
+    color: rgba($text-muted, .4)
+    position: absolute
+    z-index: 0
+    right: 0.5rem
+    top: 2rem
+    cursor: pointer
+
+  // validation
+  .form-control--message
+    font-size: 11px
+    line-height: 1rem
+    visibility: hidden
+
+  &.has-error
+    .input-control--field
+      border-bottom-color: $error
+    .form-control--message
+      color: $error
+      visibility: visible
+  &.has-warning
+    .input-control--field
+      border-bottom-color: $warning
+
+    .form-control--message
+      color: $warning
+      visibility: visible
+
+  .form-control--clear
+    display: none
+    color: rgba($text-muted, .4)
+
+  &.proc
+    .control-label
+      transform: translateY(-1.5rem)
+
+  &.active
+    .control-label
+      transform: translateY(-1.5rem)
+
+  &.filled
+    .form-control--select
+      display: none
+    &:hover
+      .form-control--clear
+        color: rgba($text-muted, 1)
+    .form-control--clear
+      display: block
+
+
+.input-control--field
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom-width: 2px
+  border-radius: 0
+  height: 64px
+  background-color: white
+  padding-top: 22px
+  padding-right: 2rem
+  font-size: 16px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  cursor: pointer
+
+  &:focus
+    background-color: white
+
+  &:focus ~ .control-label
+    transform: translateY(-1.5rem)
+
+  &:read-only ~ .control-label
+    transition: none
+    transform: translateY(-1.5rem)
+
+  &.form-control--inverted
+    background-color: transparent
+    color: white
+    &:focus
+      background-color: transparent
+    ~ label
+      color: white
+
+.input-control.focus .control-label
+  transform: translateY(-1.5rem)
+
+.input-control.filled .control-label
+  transform: translateY(-1.5rem)
+
+.control-label
+  color: $gray-500
+  font-size: 13px
+  position: absolute
+  z-index: 0
+  left: 12px
+  user-select: none
+  top: 2rem
+  transition: transform .12s ease-in-out
+  transform: translateY(-50%)
+
+.input-simple-control .form-control
+  height: 42px
+  font-size: 14px
+  line-height: 28px
+
+.form-control-textarea
+  font-size: 14px
+
+.btn-primary
+  color: white !important
+
+a.btn-warning
+  &:visited, &:link
+    color: $text-color !important

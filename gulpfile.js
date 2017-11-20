@@ -110,6 +110,7 @@ gulp.task('css', ['sass'], function(){
 // server for dev
 gulp.task('connect-dev', function() {
   connect.server({
+    name: 'B2B style lib',
     root: './dev',
     port: 8082,
     livereload: true

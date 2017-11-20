@@ -1,0 +1,38 @@
+section.section-controls
+  .container.container-sm
+    .card
+      div
+        .input-control
+          input#verification-code.form-control.input-control--field(
+            type="text",
+            tabindex="1")
+          label(for="verification-code").control-label Verification Code
+          span.form-control--clear.fa.fa-times-circle
+          span.form-control--message Error Message
+      div
+        .input-control.filled
+          input#verification-code.form-control.input-control--field(
+            value="Test",
+            type="text",
+            tabindex="1")
+          label(for="verification-code").control-label Verification Code
+          span.form-control--clear.fa.fa-times-circle
+          span.form-control--message Error Message
+      div
+        .input-control.filled.has-error
+          input#verification-code.form-control.input-control--field(
+            value="Error",
+            type="text",
+            tabindex="1")
+          label(for="verification-code").control-label Verification Code
+          span.form-control--clear.fa.fa-times-circle
+          span.form-control--message Error Message
+      div
+        .input-control.filled.has-warning
+          input#verification-code.form-control.input-control--field(
+            value="Error",
+            type="text",
+            tabindex="1")
+          label(for="verification-code").control-label Verification Code
+          span.form-control--clear.fa.fa-times-circle
+          span.form-control--message Warning Message

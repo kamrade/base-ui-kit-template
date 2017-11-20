@@ -1,0 +1,28 @@
+// selection color
+::-moz-selection {
+  color: $text-color;
+  background: $yellow;
+}
+::selection {
+  color: $text-color;
+  background: $yellow;
+}
+
+// remove IE clear button
+input::-ms-clear {
+  display: none;
+}
+// remove IE clear button for sure
+::-ms-clear {
+  width : 0;
+  height: 0;
+}
+
+// remove safari autofill
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}

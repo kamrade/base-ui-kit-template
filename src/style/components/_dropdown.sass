@@ -1,0 +1,31 @@
+.cp-dropdown
+  position: absolute
+  z-index: 99
+  width: 200px
+  min-height: 0
+  max-height: 252px
+  overflow: hidden
+  overflow-y: scroll
+  background-color: #fff
+  box-shadow: 0 0 4px rgba(0,0,0,0.1)
+  display: none
+
+  .cp-dropdown--items-list
+    padding: 0
+    margin: 0
+
+  .cp-dropdown--item
+    list-style: none
+    line-height: 1.5rem
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    padding: 0.5rem
+    cursor: default
+    border-bottom: 1px solid white
+    border-top: 1px solid white
+    &:hover
+      border-bottom: 1px solid $gray-300
+      border-top: 1px solid $gray-300
+    &.active
+      background: darken($gray-300, 10%)
