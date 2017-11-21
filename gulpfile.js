@@ -25,6 +25,11 @@ gulp.task('img:dev', function() {
     .pipe(connect.reload());
 });
 
+gulp.task('package', function() {
+  gulp.src('package.json')
+    .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('img:dist', function() {
   gulp.src('src/img/*')
     .pipe(imagemin([
@@ -129,4 +134,4 @@ gulp.task('watch', function(){
 
 gulp.task('default', ['connect-dev', 'img:dev', 'pug', 'sass', 'js', 'watch']);
 gulp.task('dev', ['connect-dev', 'img:dev', 'pug', 'sass', 'js', 'watch']);
-gulp.task('build', ['pug:dist', 'css', 'img:dist', 'compressjs']);
+gulp.task('build', ['pug:dist', 'css', 'img:dist', 'compressjs', 'package']);
