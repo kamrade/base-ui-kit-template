@@ -28,7 +28,8 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   min-width: 768px;
   &.modal {
     overflow: hidden;
