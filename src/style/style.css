@@ -4690,6 +4690,13 @@ body {
 .text-smaller {
   font-size: 0.875rem; }
 
+.page-title {
+  font-size: 1.5rem;
+  padding-left: 1rem; }
+
+.grid-title {
+  font-size: 1rem; }
+
 .card {
   padding: 1rem;
   border: 1px solid #dee2e6;
@@ -4922,3 +4929,23 @@ a.btn-warning:visited, a.btn-warning:link {
   padding: 0.5rem;
   font-size: 13px;
   border-radius: 4px; }
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1rem; }
+
+.nav li {
+  display: inline-block; }
+  .nav li:hover a {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2); }
+  .nav li a:link, .nav li a:visited {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem 0.25rem;
+    color: #868e96; }
+  .nav li a.active, .nav li a.active:link, .nav li a.active:visited {
+    color: #0090FF;
+    box-shadow: 0 2px 0 #0090FF; }
