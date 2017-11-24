@@ -29,15 +29,16 @@ input::-webkit-contacts-auto-fill-button {
 
 body {
   font-family: 'Roboto', sans-serif;
+  min-width: 768px;
+  &.modal {
+    overflow: hidden;
+    padding-right: 1rem;
+  }
 }
 
 a:focus {
   outline: none;
   box-shadow: 0 2px 0 rgba(0,0,0,0.1);
-}
-
-body {
-  min-width: 1000px;
 }
 
 .show {

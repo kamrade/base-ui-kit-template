@@ -4679,14 +4679,15 @@ input::-webkit-contacts-auto-fill-button {
   right: 0; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-width: 768px; }
+  body.modal {
+    overflow: hidden;
+    padding-right: 1rem; }
 
 a:focus {
   outline: none;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
-
-body {
-  min-width: 1000px; }
 
 .show {
   display: block !important; }
@@ -4705,13 +4706,52 @@ body {
   padding-left: 1rem; }
 
 .grid-title {
-  font-size: 1rem; }
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+.table-wrapper {
+  overflow-X: auto;
+  position: relative; }
+
+.table {
+  min-width: 1200px; }
+  .table th {
+    padding: 0.5rem;
+    font-size: 13px;
+    line-height: 1rem;
+    cursor: pointer;
+    border-top: none;
+    color: #adb5bd;
+    font-weight: 400; }
+  .table .table-header {
+    background-color: transparent;
+    border-bottom: 2px solid #dee2e6; }
+    .table .table-header:hover {
+      background-color: transparent; }
+  .table td {
+    font-size: 13px;
+    line-height: 1rem; }
+  .table .checker, .table .menu {
+    font-size: 13px;
+    color: #e9ecef;
+    padding-left: 0.5rem;
+    cursor: pointer; }
+  .table tr {
+    background-color: white;
+    border-bottom: 0.25rem solid #f8f9fa;
+    transition: all 0.2s ease-in-out; }
+    .table tr:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
 
 .card {
   padding: 1rem;
   border: 1px solid #dee2e6;
   border-radius: 0.0625rem;
   background-color: #fff; }
+  .card.card-transparent {
+    background-color: transparent; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 2rem;
@@ -4877,16 +4917,11 @@ a.btn-warning:visited, a.btn-warning:link {
     .cp-dropdown .cp-dropdown--item.active {
       background: #e9ecef; }
 
-.table th {
-  color: #adb5bd;
-  font-weight: 400;
-  font-size: 13px; }
-
 .Alert {
   padding: 1rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
   border-radius: 0.0625rem;
   border: 1px solid #dee2e6;
   position: relative;
