@@ -1,5 +1,6 @@
 // @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,900');
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,400i,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,400i,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
 
 @import './bootstrap/bootstrap';
 
@@ -13,3 +14,6 @@
 @import './components/button';
 @import './components/control';
 @import './components/dropdown';
+@import './components/table';
+@import './components/alert';
+@import './components/tooltip';

@@ -1,0 +1,43 @@
+.Alert
+  padding: 1rem
+  padding-right: 4rem
+  padding-left: 4rem
+  margin: 1rem
+  border-radius: $border-radius
+  border: 1px solid $bg-light-borders
+  position: relative
+  z-index: 1
+  background-color: rgba(255,255,255,0.5)
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03)
+
+  &.warning
+    border-left: 4px solid $warning
+
+    &:after
+      font: normal normal normal 14px/1 FontAwesome
+      content: '\f071'
+      position: absolute
+      z-index: 1
+      left: 1.5rem
+      top: 1.5rem
+      font-size: 1rem
+      color: $warning
+
+  p.AlertMessage
+    font-size: 13px
+    line-height: 1rem
+    padding: calc(0.5rem - 1px) 0
+    margin: 0
+
+  .cp-close
+    position: absolute
+    z-index: 1
+    top: 1.5rem
+    font-size: 0.75rem
+    line-height: 1
+    right: 1.5rem
+    cursor: pointer
+    color: lighten($text-muted, 10%)
+    +transition($transition-base)
+    &:hover
+      color: $text-color
