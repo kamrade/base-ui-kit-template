@@ -4985,8 +4985,7 @@ a.btn-warning:visited, a.btn-warning:link {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  line-height: 1rem;
-  flex-grow: 2; }
+  line-height: 1rem; }
 
 .nav li {
   display: inline-block; }
@@ -4995,7 +4994,7 @@ a.btn-warning:visited, a.btn-warning:link {
   .nav li a:link, .nav li a:visited {
     display: block;
     padding: 0.5rem;
-    margin: 1rem 0.25rem;
+    margin: 0 0.25rem;
     color: #868e96; }
   .nav li a.active, .nav li a.active:link, .nav li a.active:visited {
     color: #0090FF;
