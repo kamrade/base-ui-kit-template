@@ -8,6 +8,7 @@
 .Tooltip
   position: fixed
   z-index: 2
+  max-width: 280px
   top: 50%
   left: 50%
   background-color: #000
@@ -15,3 +16,17 @@
   padding: 0.5rem
   font-size: 13px
   border-radius: 4px
+  border-bottom: 6px solid $primary
+  transform: translateX(-50%) translateY(-50%)
+  &::before
+    content: ''
+    width: 0
+    height: 0
+    border-left: 8px solid transparent
+    border-right: 8px solid transparent
+    border-top: 9px solid $primary
+    position: absolute
+    z-index: 3
+    bottom: -14px
+    left: 50%
+    transform: translate(-50%)

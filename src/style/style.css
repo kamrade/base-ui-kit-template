@@ -4706,6 +4706,9 @@ a:focus {
   font-size: 1.5rem;
   padding-left: 1rem; }
 
+.modal-title {
+  font-size: 1.5rem; }
+
 .grid-title {
   font-size: 1rem;
   line-height: 1rem;
@@ -4972,13 +4975,28 @@ a.btn-warning:visited, a.btn-warning:link {
 .Tooltip {
   position: fixed;
   z-index: 2;
+  max-width: 280px;
   top: 50%;
   left: 50%;
   background-color: #000;
   color: white;
   padding: 0.5rem;
   font-size: 13px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border-bottom: 6px solid #0090FF;
+  transform: translateX(-50%) translateY(-50%); }
+  .Tooltip::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 9px solid #0090FF;
+    position: absolute;
+    z-index: 3;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%); }
 
 .nav {
   list-style: none;
