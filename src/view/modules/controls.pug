@@ -1,7 +1,9 @@
-section.section-controls
-  .container.container-sm
-    .card
-      div
+section.controls
+  .container.mb-3
+    h5.section-title Controls
+  .container.mb-3
+    .row
+      .col-md-3
         .input-control
           input#verification-code.form-control.input-control--field(
             type="text",
@@ -9,7 +11,7 @@ section.section-controls
           label(for="verification-code").control-label Verification Code
           span.form-control--clear.fa.fa-times-circle
           span.form-control--message Error Message
-      div
+      .col-md-3
         .input-control.filled
           input#verification-code.form-control.input-control--field(
             value="Test",
@@ -18,7 +20,7 @@ section.section-controls
           label(for="verification-code").control-label Verification Code
           span.form-control--clear.fa.fa-times-circle
           span.form-control--message Error Message
-      div
+      .col-md-3
         .input-control.filled.has-error
           input#verification-code.form-control.input-control--field(
             value="Error",
@@ -27,7 +29,7 @@ section.section-controls
           label(for="verification-code").control-label Verification Code
           span.form-control--clear.fa.fa-times-circle
           span.form-control--message Error Message
-      div
+      .col-md-3
         .input-control.filled.has-warning
           input#verification-code.form-control.input-control--field(
             value="Error",
@@ -36,3 +38,12 @@ section.section-controls
           label(for="verification-code").control-label Verification Code
           span.form-control--clear.fa.fa-times-circle
           span.form-control--message Warning Message
+
+    .row
+      .col-md-3
+        .input-group-btn
+          input#normal-input.form-control.mr-2(
+            value="Value",
+            type="text",
+            tabindex="1")
+          button.btn.btn-primary Long Value
