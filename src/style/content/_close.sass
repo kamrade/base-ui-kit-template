@@ -1,9 +1,12 @@
-.close
+.cp-close
   position: absolute
   z-index: 1
-  right: 1rem
   top: 1rem
-  height: 1rem
-  width: 1rem
-  background-color: pink
-  vertical-align: top
+  right: 1rem
+  font-size: 0.75rem
+  line-height: 1
+  cursor: pointer
+  color: lighten($text-muted, 10%)
+  +transition($transition-base)
+  &:hover
+    color: $text-color
