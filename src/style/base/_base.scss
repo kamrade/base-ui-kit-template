@@ -1,3 +1,11 @@
+body {
+  min-width: 768px;
+  &.modal {
+    overflow: hidden;
+    padding-right: 1rem;
+  }
+}
+
 // selection color
 ::-moz-selection {
   color: $text-color;
@@ -25,16 +33,6 @@ input::-webkit-contacts-auto-fill-button {
   pointer-events: none;
   position: absolute;
   right: 0;
-}
-
-body {
-  // font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  min-width: 768px;
-  &.modal {
-    overflow: hidden;
-    padding-right: 1rem;
-  }
 }
 
 a:focus {

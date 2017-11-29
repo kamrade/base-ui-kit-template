@@ -4,8 +4,8 @@
 
 // stylelint-disable value-keyword-case
 // $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-sans-serif:      'Libre Franklin', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      'Roboto', 'Libre Franklin', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       'Roboto Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
@@ -22,12 +22,18 @@ $font-weight-black:           900 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 0.875 !default;
+// $h1-font-size:                $font-size-base * 2.5 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+// $h3-font-size:                $font-size-base * 1.75 !default;
+// $h4-font-size:                $font-size-base * 1.5 !default;
+// $h5-font-size:                $font-size-base * 1.25 !default;
+// $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;

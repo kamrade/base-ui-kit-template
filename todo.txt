@@ -1,2 +1,4 @@
-- separate dev and dist pug compiling proc
-- add rimraf (same as in angular build)
++ separate dev and dist pug compiling proc
++ add rimraf (same as in angular build)
+
+- connect to font-awesome or create svg icons 
