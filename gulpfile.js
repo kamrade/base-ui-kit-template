@@ -30,6 +30,16 @@ gulp.task('package', function() {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('fonts:dev', function() {
+  gulp.src('src/fonts/**')
+    .pipe(gulp.dest('./dev/fonts/'));
+});
+
+gulp.task('fonts:dist', function() {
+  gulp.src('src/fonts/**')
+    .pipe(gulp.dest('./dist/fonts/'));
+});
+
 gulp.task('img:dist', function() {
   gulp.src('src/img/*')
     .pipe(imagemin([
@@ -130,8 +140,9 @@ gulp.task('watch', function(){
   gulp.watch('./src/style/**/*.scss', ['sass']);
   gulp.watch('./src/img/**/*.jpg', ['img']);
   gulp.watch('./src/img/**/*.png', ['img']);
+  gulp.watch('./src/fonts/**', ['fonts']);
 });
 
-gulp.task('default', ['connect-dev', 'img:dev', 'pug', 'sass', 'js', 'watch']);
-gulp.task('dev', ['connect-dev', 'img:dev', 'pug', 'sass', 'js', 'watch']);
-gulp.task('build', ['pug:dist', 'css', 'img:dist', 'compressjs', 'package']);
+gulp.task('default', ['connect-dev', 'img:dev', 'fonts:dev', 'pug', 'sass', 'js', 'watch']);
+gulp.task('dev', ['connect-dev', 'img:dev', 'fonts:dev', 'pug', 'sass', 'js', 'watch']);
+gulp.task('build', ['pug:dist', 'css', 'img:dist', 'fonts:dist', 'compressjs', 'package']);

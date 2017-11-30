@@ -2,7 +2,61 @@ section.controls
   .container.mb-3
     h5.section-title Controls
   .container.mb-3
+    
     .row
+      .col-md-4
+        h6.section-subtitle Common Inputs
+        .card.mb-5
+          .mb-3
+            .input-group-btn
+              input#normal-input.form-control.mr-2(
+                value="Value",
+                type="text",
+                tabindex="1")
+              button.btn.btn-primary Long Value
+          .mb-3
+            .input-group-btn
+              input#normal-input.form-control.form-control-lg.mr-2(
+                value="Value",
+                type="text",
+                tabindex="1")
+              button.btn.btn-lg.btn-primary Long Value
+          .mb-0
+            .input-group-btn
+              input#normal-input.form-control.form-control-sm.mr-2(
+                value="Value",
+                type="text",
+                tabindex="1")
+              button.btn.btn-sm.btn-primary Long Value
+      .col-md-4
+        h6.section-subtitle Input Groups
+        .card.mb-5
+          .mb-3
+            .input-group
+              span.input-group-addon.oi(data-glyph="calendar")
+              input#normal-input.form-control(
+                value="Value",
+                type="text",
+                tabindex="1")
+          .mb-3
+            .input-group.input-group-lg
+              span.input-group-addon.oi(data-glyph="calendar")
+              input#normal-input.form-control.form-control-lg(
+                value="Value",
+                type="text",
+                tabindex="1")
+          .mb-0
+            .input-group.input-group-sm
+              span.input-group-addon.oi(data-glyph="calendar")
+              input#normal-input.form-control.form-control-sm(
+                value="Value",
+                type="text",
+                tabindex="1")
+
+
+
+    h6.section-subtitle Common Input Controls
+    .row.mb-5
       .col-md-3
         .input-control
           input#verification-code.form-control.input-control--field(
@@ -38,12 +92,16 @@ section.controls
           label(for="verification-code").control-label Verification Code
           span.form-control--clear.fa.fa-times-circle
           span.form-control--message Warning Message
-
-    .row
+    
+    h6.section-subtitle Input Controls Variations
+    .row.mb-6
       .col-md-3
-        .input-group-btn
-          input#normal-input.form-control.mr-2(
-            value="Value",
+        .input-control.select-control
+          input#title.form-control.input-control--field(
             type="text",
-            tabindex="1")
-          button.btn.btn-primary Long Value
+            name="title",
+            autocomplete="off")
+          label(for="title").control-label Title
+          span.form-control--select.fa.fa-angle-down
+          span.form-control--clear.fa.fa-times-circle
+          span.form-control--message Error Message

@@ -67,9 +67,9 @@ $error: red
   border-left: none
   border-right: none
   border-bottom-width: 2px
-  border-radius: 0
+  border-radius: $border-radius
   height: 64px
-  background-color: white
+  background-color: rgba(255,255,255,0.7)
   padding-top: 22px
   padding-right: 2rem
   font-size: 16px
@@ -114,9 +114,11 @@ $error: red
   transform: translateY(-50%)
 
 .input-simple-control .form-control
-  height: 42px
+  // height: 42px
+  height: 40px
   font-size: 14px
-  line-height: 28px
+  // line-height: 28px
+  line-height: 24px
 
 .form-control-textarea
   font-size: 14px
