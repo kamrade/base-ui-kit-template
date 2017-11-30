@@ -5448,7 +5448,8 @@ a:focus {
   font-size: 1rem;
   line-height: 1rem;
   font-weight: 700;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  vertical-align: top; }
 
 .table-wrapper {
   overflow-X: auto;
@@ -5473,6 +5474,7 @@ a:focus {
   .table td {
     font-size: 13px;
     line-height: 1rem;
+    height: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -5483,7 +5485,7 @@ a:focus {
     cursor: pointer; }
   .table tr {
     background-color: white;
-    border-bottom: 0.25rem solid #f8f9fa;
+    border-bottom: 6px solid #f8f9fa;
     transition: all 0.2s ease-in-out; }
     .table tr:hover {
       background-color: rgba(255, 255, 255, 0.5); }
@@ -5546,6 +5548,20 @@ a:visited.btn, a:link.btn {
 .btn-wide {
   padding-left: 2rem;
   padding-right: 2rem; }
+
+.btn-ic {
+  background-color: transparent;
+  cursor: pointer; }
+  .btn-ic .btn-ic-content {
+    color: #dee2e6;
+    transition: all 0.2s ease-in-out; }
+  .btn-ic:hover {
+    box-shadow: none;
+    background-color: #e9ecef; }
+  .btn-ic:active {
+    background-color: #dee2e6; }
+  .btn-ic:focus .btn-ic-content {
+    color: #ced4da; }
 
 .input-control {
   position: relative;

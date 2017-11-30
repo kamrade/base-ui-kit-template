@@ -28,3 +28,19 @@ a:visited.btn, a:link.btn
 .btn-wide
   padding-left: 2rem
   padding-right: 2rem
+
+.btn-ic
+  background-color: transparent
+  cursor: pointer
+
+  .btn-ic-content
+    color: $gray-300
+    +transition($transition-base)
+  &:hover
+    box-shadow: none
+    background-color: $gray-200
+  &:active
+    background-color: $gray-300
+  &:focus
+    .btn-ic-content
+      color: $gray-400
