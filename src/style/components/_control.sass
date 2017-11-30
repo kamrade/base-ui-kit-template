@@ -129,3 +129,54 @@ $error: red
 a.btn-warning
   &:visited, &:link
     color: $text-color !important
+
+label
+  font-size: 13px
+  margin-bottom: 0.25rem
+
+// custom checkbox
+.custom-checkbox
+  padding-left: 2rem
+  padding-top: 0.5rem
+  position: relative
+  height: 2.5rem
+  .form-check-input[type="checkbox"] + label.form-check-label
+    &::after
+      content: ''
+      position: absolute
+      z-index: 1
+      top: 0
+      left: 0
+      width: 2.5rem
+      height: 2.5rem
+      background-color: white
+      border: 1px solid $bg-light-borders
+      border-radius: $border-radius
+      padding: .75rem
+  .form-check-input[type="checkbox"]:not(checked) + label.form-check-label
+    &::after
+  .form-check-input[type="checkbox"]:checked + label.form-check-label
+    &::after
+      font: normal normal normal 14px/1 FontAwesome
+      content: '\f00c'
+
+  .form-check-input
+    display: none
+
+.custom-checkbox-sm
+  height: 2rem
+  padding-left: 1.25rem
+  padding-top: 0.125rem
+  .form-check-input[type="checkbox"] + label.form-check-label::after
+    width: 2rem
+    height: 2rem
+    padding: .5rem
+
+.custom-checkbox-lg
+  height: 3rem
+  padding-left: 2.5rem
+  padding-top: 0.75rem
+  .form-check-input[type="checkbox"] + label.form-check-label::after
+    width: 3rem
+    height: 3rem
+    padding: 1rem
