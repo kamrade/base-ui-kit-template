@@ -5447,7 +5447,6 @@ a:focus {
 .grid-title {
   font-size: 1rem;
   line-height: 1rem;
-  font-weight: 700;
   margin-bottom: 1rem;
   vertical-align: top; }
 
@@ -5816,7 +5815,11 @@ label {
   font-size: 13px;
   border-radius: 4px;
   border-bottom: 4px solid #0090FF;
-  transform: translateX(-50%); }
+  visibility: hidden;
+  opacity: 0; }
+  .Tooltip.fullyVisible {
+    visibility: visible;
+    animation: pop-upwards 240ms linear 800ms forwards; }
   .Tooltip .tooltip-text {
     max-height: 220px;
     overflow-y: auto;
@@ -5834,6 +5837,23 @@ label {
     bottom: -12px;
     left: 50%;
     transform: translate(-50%); }
+
+@keyframes pop-upwards {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 12) translateX(-50%);
+    opacity: 0; }
+  20% {
+    transform: matrix(1, 0, 0, 1, 0, 2) translateX(-50%);
+    opacity: .7; }
+  40% {
+    transform: matrix(1, 0, 0, 1, 0, -1) translateX(-50%);
+    opacity: 1; }
+  70% {
+    transform: matrix(1, 0, 0, 1, 0, 0) translateX(-50%);
+    opacity: 1; }
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0) translateX(-50%);
+    opacity: 1; } }
 
 .nav {
   list-style: none;
