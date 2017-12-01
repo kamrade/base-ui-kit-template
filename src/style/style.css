@@ -5786,6 +5786,21 @@ label {
       top: 1.5rem;
       font-size: 1rem;
       color: #28D37C; }
+  .Alert.loading {
+    border-left: 4px solid #dee2e6;
+    background-color: white;
+    opacity: 1;
+    animation: loadingBg 600ms linear infinite; }
+    .Alert.loading:after {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: '\f021';
+      position: absolute;
+      z-index: 1;
+      left: 1.5rem;
+      top: 1.5rem;
+      font-size: 1rem;
+      color: #dee2e6;
+      animation: spin 1200ms linear infinite; }
   .Alert .alert-message {
     font-size: 13px;
     line-height: 1rem;
@@ -5794,6 +5809,20 @@ label {
   .Alert .cp-close {
     top: 1.5rem;
     right: 1.5rem; }
+
+@keyframes loadingBg {
+  0% {
+    opacity: 0.6; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    opacity: 0.6; } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .tooltipContainer {
   position: fixed;

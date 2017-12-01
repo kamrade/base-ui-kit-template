@@ -43,6 +43,24 @@
       top: 1.5rem
       font-size: 1rem
       color: $success
+  &.loading
+    border-left: 4px solid $bg-light-borders
+    background-color: white
+    opacity: 1
+
+    animation: loadingBg 600ms linear infinite
+
+    &:after
+      font: normal normal normal 14px/1 FontAwesome
+      content: '\f021'
+      position: absolute
+      z-index: 1
+      left: 1.5rem
+      top: 1.5rem
+      font-size: 1rem
+      color: $bg-light-borders
+
+      animation: spin 1200ms linear infinite
 
   .alert-message
     font-size: 13px
@@ -53,3 +71,17 @@
   .cp-close
     top: 1.5rem
     right: 1.5rem
+
+@keyframes loadingBg
+  0%
+    opacity: 0.6
+  50%
+    opacity: 0.1
+  100%
+    opacity: 0.6
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
