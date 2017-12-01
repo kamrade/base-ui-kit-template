@@ -5765,7 +5765,8 @@ label {
       font-size: 1rem;
       color: #FFC829; }
   .Alert.danger {
-    border-left: 4px solid #FF0457; }
+    border-left: 4px solid #FF0457;
+    animation: blinking 1200ms linear infinite; }
     .Alert.danger:after {
       font: normal normal normal 14px/1 FontAwesome;
       content: '\f06a';
@@ -5790,7 +5791,7 @@ label {
     border-left: 4px solid #dee2e6;
     background-color: white;
     opacity: 1;
-    animation: loadingBg 600ms linear infinite; }
+    animation: blinking 600ms linear infinite; }
     .Alert.loading:after {
       font: normal normal normal 14px/1 FontAwesome;
       content: '\f021';
@@ -5810,7 +5811,7 @@ label {
     top: 1.5rem;
     right: 1.5rem; }
 
-@keyframes loadingBg {
+@keyframes blinking {
   0% {
     opacity: 0.6; }
   50% {

@@ -23,6 +23,8 @@
       color: $warning
   &.danger
     border-left: 4px solid $danger
+    animation: blinking 1200ms linear infinite
+
     &:after
       font: normal normal normal 14px/1 FontAwesome
       content: '\f06a'
@@ -32,6 +34,7 @@
       top: 1.5rem
       font-size: 1rem
       color: $danger
+      
   &.success
     border-left: 4px solid $success
     &:after
@@ -48,7 +51,7 @@
     background-color: white
     opacity: 1
 
-    animation: loadingBg 600ms linear infinite
+    animation: blinking 600ms linear infinite
 
     &:after
       font: normal normal normal 14px/1 FontAwesome
@@ -72,7 +75,7 @@
     top: 1.5rem
     right: 1.5rem
 
-@keyframes loadingBg
+@keyframes blinking
   0%
     opacity: 0.6
   50%
