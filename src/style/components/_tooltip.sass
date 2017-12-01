@@ -1,3 +1,5 @@
+$tooltipAppearDelay: 800ms
+
 .tooltipContainer
   position: fixed
   top: 0
@@ -20,13 +22,10 @@
   border-bottom: 4px solid $primary
   visibility: hidden
   opacity: 0
-  // transform: translateX(-50%) translateY(5%)
-  // transition: transform .14s cubic-bezier(.17,.67,.45,1.2)
 
   &.fullyVisible
-    // transform: translateX(-50%) translateY(0)
     visibility: visible
-    animation: pop-upwards 240ms linear 800ms forwards
+    animation: pop-upwards 240ms linear $tooltipAppearDelay forwards
 
   .tooltip-text
     max-height: 220px
