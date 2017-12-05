@@ -57,21 +57,21 @@ gulp.task('img:dist', function() {
 });
 
 gulp.task('pug', function () {
-  return gulp.src('src/view/index.pug')
+  return gulp.src('src/view/*.pug')
     .pipe(pug({
       pretty: true
     }))
-    .pipe(rename('index.html'))
+    // .pipe(rename('index.html'))
     .pipe(gulp.dest('./dev/'))
     .pipe(connect.reload());
 });
 
 gulp.task('pug:dist', function () {
-  return gulp.src('src/view/index.pug')
+  return gulp.src('src/view/*.pug')
     .pipe(pug({
       pretty: false
     }))
-    .pipe(rename('index.html'))
+    // .pipe(rename('index.html'))
     .pipe(gulp.dest('./dist/'));
 });
 

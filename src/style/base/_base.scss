@@ -35,6 +35,11 @@ input::-webkit-contacts-auto-fill-button {
   right: 0;
 }
 
+a, a:link, a:visited {
+  color: $primary;
+  text-decoration: underline;
+}
+
 a:focus {
   outline: none;
   box-shadow: 0 2px 0 rgba(0,0,0,0.1);
