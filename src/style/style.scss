@@ -1,7 +1,7 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
-// @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
-
+// font-family: 'Roboto Mono', monospace;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&subset=cyrillic');
 // ICON FONTS
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import './base/open-iconic.scss';
@@ -17,6 +17,7 @@
 @import './content/typo';
 @import './content/table';
 @import './content/close';
+@import './content/hr';
 
 @import './components/card';
 @import './components/button';
@@ -26,3 +27,5 @@
 @import './components/tooltip';
 @import './components/nav';
 @import './components/Indicator';
+
+@import './custom'

@@ -127,7 +127,7 @@ gulp.task('connect-dev', function() {
   connect.server({
     name: 'B2B style lib',
     root: './dev',
-    port: 8082,
+    port: 7777,
     livereload: true
   });
 });

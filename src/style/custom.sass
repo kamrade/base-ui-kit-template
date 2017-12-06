@@ -1,0 +1,20 @@
+a.link
+  color: rgba($link-color, .8)
+  text-decoration: none
+
+a.link:hover
+  color: rgba($link-color, 1)
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    z-index: 0
+    height: 2px
+    width: 100%
+    left: 0
+    bottom: -0.5rem
+    background-color: $link-color
+
+.sidebar
+  height: 100vh
+  border-right: 1px solid $gray-300

@@ -1,5 +1,4 @@
 body {
-  // min-width: 768px;
   &.modal {
     overflow: hidden;
     padding-right: 1rem;
@@ -33,16 +32,6 @@ input::-webkit-contacts-auto-fill-button {
   pointer-events: none;
   position: absolute;
   right: 0;
-}
-
-a, a:link, a:visited {
-  color: $primary;
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: none;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
 }
 
 .show {
